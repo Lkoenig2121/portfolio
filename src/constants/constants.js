@@ -58,7 +58,7 @@ export const projects = [
   {
     title: 'Piano',
     description: "A completetly viable piano which can either be played by clicking or on your keyboard",
-    image: '/images/8.png',
+    image: './images/8.png',
     tags: ['html', 'css', 'javascript'],
     id: 7,
     href: "https://github.com/Lkoenig2121/Piano",
