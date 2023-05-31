@@ -19,4 +19,4 @@ EXPOSE 3000
 
 STOPSIGNAL SIGTERM
 
-CMD ["serve", "-s build"]
+CMD ["node", "-s", "build"]
