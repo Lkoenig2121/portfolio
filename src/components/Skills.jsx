@@ -5,7 +5,6 @@ import javascript from '../assets/javascript.png'
 import react from '../assets/react.png'
 import tailwind from '../assets/tailwind.png'
 import git from '../assets/git.jpeg'
-import github from '../assets/github.png'
 
 const Skills = () => {
   return (
