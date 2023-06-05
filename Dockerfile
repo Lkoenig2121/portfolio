@@ -18,18 +18,4 @@ RUN npm run build
 
 # serve app via nginx
 FROM nginx:alpine
-
-COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
-
-WORKDIR /app/build
-
-RUN rm -rf *
-
-COPY --from=builder /app/build .
-
-EXPOSE 80
-
-STOPSIGNAL SIGTERM
-
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+COPY site /usr/share/nginx/html
